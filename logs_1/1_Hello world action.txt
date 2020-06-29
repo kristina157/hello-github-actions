@@ -1,0 +1,142 @@
+2020-06-29T16:07:14.1228972Z ##[section]Starting: Request a runner to run this job
+2020-06-29T16:07:15.4219439Z Can't find any online and idle self-hosted runner in current repository that matches the required labels: 'ubuntu-latest'
+2020-06-29T16:07:15.4219477Z Can't find any online and idle self-hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2020-06-29T16:07:15.4219501Z Found online and idle hosted runner in current repository's account/organization that matches the required labels: 'ubuntu-latest'
+2020-06-29T16:07:15.6840039Z ##[section]Finishing: Request a runner to run this job
+2020-06-29T16:07:22.3122667Z Current runner version: '2.169.1'
+2020-06-29T16:07:22.3145236Z ##[group]Operating System
+2020-06-29T16:07:22.3145917Z Ubuntu
+2020-06-29T16:07:22.3146147Z 18.04.4
+2020-06-29T16:07:22.3146329Z LTS
+2020-06-29T16:07:22.3146521Z ##[endgroup]
+2020-06-29T16:07:22.3146700Z ##[group]Virtual Environment
+2020-06-29T16:07:22.3146903Z Environment: ubuntu-18.04
+2020-06-29T16:07:22.3147040Z Version: 20200621.1
+2020-06-29T16:07:22.3147286Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20200621.1/images/linux/Ubuntu1804-README.md
+2020-06-29T16:07:22.3147512Z ##[endgroup]
+2020-06-29T16:07:22.3148387Z Prepare workflow directory
+2020-06-29T16:07:22.3469919Z Prepare all required actions
+2020-06-29T16:07:22.3482732Z Download action repository 'actions/checkout@v1'
+2020-06-29T16:07:23.2703062Z ##[group]Run actions/checkout@v1
+2020-06-29T16:07:23.2703421Z with:
+2020-06-29T16:07:23.2703696Z   clean: true
+2020-06-29T16:07:23.2703862Z ##[endgroup]
+2020-06-29T16:07:24.0597759Z Syncing repository: kristina157/hello-github-actions
+2020-06-29T16:07:24.7168700Z ##[command]git version
+2020-06-29T16:07:24.7196180Z git version 2.27.0
+2020-06-29T16:07:24.7196599Z ##[command]git lfs version
+2020-06-29T16:07:24.7197618Z git-lfs/2.11.0 (GitHub; linux amd64; go 1.13.4)
+2020-06-29T16:07:24.7198643Z ##[command]git init "/home/runner/work/hello-github-actions/hello-github-actions"
+2020-06-29T16:07:24.7200224Z Initialized empty Git repository in /home/runner/work/hello-github-actions/hello-github-actions/.git/
+2020-06-29T16:07:24.7200824Z ##[command]git remote add origin https://github.com/kristina157/hello-github-actions
+2020-06-29T16:07:24.7201077Z ##[command]git config gc.auto 0
+2020-06-29T16:07:24.7202654Z ##[command]git config --get-all http.https://github.com/kristina157/hello-github-actions.extraheader
+2020-06-29T16:07:24.7204905Z ##[command]git -c http.extraheader="AUTHORIZATION: basic ***" fetch --tags --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/*
+2020-06-29T16:07:24.7205965Z remote: Enumerating objects: 28, done.        
+2020-06-29T16:07:24.7206184Z remote: Counting objects:   3% (1/28)        
+2020-06-29T16:07:24.7206379Z remote: Counting objects:   7% (2/28)        
+2020-06-29T16:07:24.7206566Z remote: Counting objects:  10% (3/28)        
+2020-06-29T16:07:24.7207314Z remote: Counting objects:  14% (4/28)        
+2020-06-29T16:07:24.7207516Z remote: Counting objects:  17% (5/28)        
+2020-06-29T16:07:24.7207707Z remote: Counting objects:  21% (6/28)        
+2020-06-29T16:07:24.7208407Z remote: Counting objects:  25% (7/28)        
+2020-06-29T16:07:24.7208612Z remote: Counting objects:  28% (8/28)        
+2020-06-29T16:07:24.7208801Z remote: Counting objects:  32% (9/28)        
+2020-06-29T16:07:24.7209008Z remote: Counting objects:  35% (10/28)        
+2020-06-29T16:07:24.7209199Z remote: Counting objects:  39% (11/28)        
+2020-06-29T16:07:24.7209388Z remote: Counting objects:  42% (12/28)        
+2020-06-29T16:07:24.7209575Z remote: Counting objects:  46% (13/28)        
+2020-06-29T16:07:24.7209773Z remote: Counting objects:  50% (14/28)        
+2020-06-29T16:07:24.7209946Z remote: Counting objects:  53% (15/28)        
+2020-06-29T16:07:24.7210137Z remote: Counting objects:  57% (16/28)        
+2020-06-29T16:07:24.7210803Z remote: Counting objects:  60% (17/28)        
+2020-06-29T16:07:24.7211034Z remote: Counting objects:  64% (18/28)        
+2020-06-29T16:07:24.7211223Z remote: Counting objects:  67% (19/28)        
+2020-06-29T16:07:24.7211410Z remote: Counting objects:  71% (20/28)        
+2020-06-29T16:07:24.7214331Z remote: Counting objects:  75% (21/28)        
+2020-06-29T16:07:24.7218196Z remote: Counting objects:  78% (22/28)        
+2020-06-29T16:07:24.7218618Z remote: Counting objects:  82% (23/28)        
+2020-06-29T16:07:24.7219488Z remote: Counting objects:  85% (24/28)        
+2020-06-29T16:07:24.7219876Z remote: Counting objects:  89% (25/28)        
+2020-06-29T16:07:24.7220073Z remote: Counting objects:  92% (26/28)        
+2020-06-29T16:07:24.7220264Z remote: Counting objects:  96% (27/28)        
+2020-06-29T16:07:24.7220724Z remote: Counting objects: 100% (28/28)        
+2020-06-29T16:07:24.7221149Z remote: Counting objects: 100% (28/28), done.        
+2020-06-29T16:07:24.7221342Z remote: Compressing objects:   4% (1/22)        
+2020-06-29T16:07:24.7221837Z remote: Compressing objects:   9% (2/22)        
+2020-06-29T16:07:24.7222301Z remote: Compressing objects:  13% (3/22)        
+2020-06-29T16:07:24.7222659Z remote: Compressing objects:  18% (4/22)        
+2020-06-29T16:07:24.7222846Z remote: Compressing objects:  22% (5/22)        
+2020-06-29T16:07:24.7223028Z remote: Compressing objects:  27% (6/22)        
+2020-06-29T16:07:24.7223210Z remote: Compressing objects:  31% (7/22)        
+2020-06-29T16:07:24.7223681Z remote: Compressing objects:  36% (8/22)        
+2020-06-29T16:07:24.7223891Z remote: Compressing objects:  40% (9/22)        
+2020-06-29T16:07:24.7224265Z remote: Compressing objects:  45% (10/22)        
+2020-06-29T16:07:24.7224622Z remote: Compressing objects:  50% (11/22)        
+2020-06-29T16:07:24.7224814Z remote: Compressing objects:  54% (12/22)        
+2020-06-29T16:07:24.7225165Z remote: Compressing objects:  59% (13/22)        
+2020-06-29T16:07:24.7225363Z remote: Compressing objects:  63% (14/22)        
+2020-06-29T16:07:24.7225824Z remote: Compressing objects:  68% (15/22)        
+2020-06-29T16:07:24.7226055Z remote: Compressing objects:  72% (16/22)        
+2020-06-29T16:07:24.7226241Z remote: Compressing objects:  77% (17/22)        
+2020-06-29T16:07:24.7226563Z remote: Compressing objects:  81% (18/22)        
+2020-06-29T16:07:24.7226798Z remote: Compressing objects:  86% (19/22)        
+2020-06-29T16:07:24.7227119Z remote: Compressing objects:  90% (20/22)        
+2020-06-29T16:07:24.7227318Z remote: Compressing objects:  95% (21/22)        
+2020-06-29T16:07:24.7227643Z remote: Compressing objects: 100% (22/22)        
+2020-06-29T16:07:24.7227900Z remote: Compressing objects: 100% (22/22), done.        
+2020-06-29T16:07:24.7228513Z remote: Total 28 (delta 5), reused 5 (delta 0), pack-reused 0        
+2020-06-29T16:07:24.7229097Z From https://github.com/kristina157/hello-github-actions
+2020-06-29T16:07:24.7229503Z  * [new branch]      kristina157-patch-1 -> origin/kristina157-patch-1
+2020-06-29T16:07:24.7229874Z  * [new branch]      master              -> origin/master
+2020-06-29T16:07:24.7230634Z ##[command]git checkout --progress --force b5801a5edb41e17e4cc417278041cd3c6b6b16cc
+2020-06-29T16:07:24.7231433Z Note: switching to 'b5801a5edb41e17e4cc417278041cd3c6b6b16cc'.
+2020-06-29T16:07:24.7231746Z 
+2020-06-29T16:07:24.7232223Z You are in 'detached HEAD' state. You can look around, make experimental
+2020-06-29T16:07:24.7232447Z changes and commit them, and you can discard any commits you make in this
+2020-06-29T16:07:24.7232855Z state without impacting any branches by switching back to a branch.
+2020-06-29T16:07:24.7233125Z 
+2020-06-29T16:07:24.7233480Z If you want to create a new branch to retain commits you create, you may
+2020-06-29T16:07:24.7233965Z do so (now or later) by using -c with the switch command. Example:
+2020-06-29T16:07:24.7234198Z 
+2020-06-29T16:07:24.7234525Z   git switch -c <new-branch-name>
+2020-06-29T16:07:24.7234639Z 
+2020-06-29T16:07:24.7234793Z Or undo this operation with:
+2020-06-29T16:07:24.7235066Z 
+2020-06-29T16:07:24.7235655Z   git switch -
+2020-06-29T16:07:24.7235759Z 
+2020-06-29T16:07:24.7236020Z Turn off this advice by setting config variable advice.detachedHead to false
+2020-06-29T16:07:24.7236400Z 
+2020-06-29T16:07:24.7236579Z HEAD is now at b5801a5 Update main.yml
+2020-06-29T16:07:24.7388556Z ##[group]Run ./action-a
+2020-06-29T16:07:24.7388741Z with:
+2020-06-29T16:07:24.7388895Z   MY_NAME: Mona
+2020-06-29T16:07:24.7389042Z ##[endgroup]
+2020-06-29T16:07:24.7452373Z Dockerfile for action: '/home/runner/work/hello-github-actions/hello-github-actions/./action-a/Dockerfile'.
+2020-06-29T16:07:24.7461157Z ##[command]/usr/bin/docker build -t c27d31:102267eac6f850e5e2ae674a50bf9349 "/home/runner/work/hello-github-actions/hello-github-actions/action-a"
+2020-06-29T16:07:25.7230218Z Sending build context to Docker daemon  4.096kB
+2020-06-29T16:07:25.7230358Z 
+2020-06-29T16:07:25.7230532Z Step 1/4 : FROM debian:9.5-slim
+2020-06-29T16:07:25.7230714Z 9.5-slim: Pulling from library/debian
+2020-06-29T16:07:25.7230889Z f17d81b4b692: Pulling fs layer
+2020-06-29T16:07:25.8062508Z f17d81b4b692: Verifying Checksum
+2020-06-29T16:07:25.8063290Z f17d81b4b692: Download complete
+2020-06-29T16:07:26.8276797Z f17d81b4b692: Pull complete
+2020-06-29T16:07:26.8313278Z Digest: sha256:ef6be890318a105f7401d0504c01c2888daa5d9e45b308cf0e45c7cb8e44634f
+2020-06-29T16:07:26.8331488Z Status: Downloaded newer image for debian:9.5-slim
+2020-06-29T16:07:26.8334127Z  ---> 4b4471f624dc
+2020-06-29T16:07:26.8335596Z Step 2/4 : ADD entrypoint.sh /entrypoint.sh
+2020-06-29T16:07:28.5769910Z  ---> c18d9519da9b
+2020-06-29T16:07:28.5770689Z Step 3/4 : RUN chmod +x /entrypoint.sh
+2020-06-29T16:07:28.5958558Z  ---> Running in c29529905203
+2020-06-29T16:07:30.0132088Z Removing intermediate container c29529905203
+2020-06-29T16:07:30.0132553Z  ---> 78a19a3029a9
+2020-06-29T16:07:30.0132811Z Step 4/4 : ENTRYPOINT ["/entrypoint.sh"]
+2020-06-29T16:07:30.0287450Z  ---> Running in 1c8356032436
+2020-06-29T16:07:31.0175822Z Removing intermediate container 1c8356032436
+2020-06-29T16:07:31.0178282Z  ---> 0b1426eef0b6
+2020-06-29T16:07:31.0179245Z Successfully built 0b1426eef0b6
+2020-06-29T16:07:31.0194587Z Successfully tagged c27d31:102267eac6f850e5e2ae674a50bf9349
+2020-06-29T16:07:31.0236512Z ##[command]/usr/bin/docker run --name c27d31102267eac6f850e5e2ae674a50bf9349_f909d0 --label c27d31 --workdir /github/workspace --rm -e INPUT_MY_NAME -e HOME -e GITHUB_JOB -e GITHUB_REF -e GITHUB_SHA -e GITHUB_REPOSITORY -e GITHUB_REPOSITORY_OWNER -e GITHUB_RUN_ID -e GITHUB_RUN_NUMBER -e GITHUB_ACTOR -e GITHUB_WORKFLOW -e GITHUB_HEAD_REF -e GITHUB_BASE_REF -e GITHUB_EVENT_NAME -e GITHUB_API_URL -e GITHUB_WORKSPACE -e GITHUB_ACTION -e GITHUB_EVENT_PATH -e RUNNER_OS -e RUNNER_TOOL_CACHE -e RUNNER_TEMP -e RUNNER_WORKSPACE -e ACTIONS_RUNTIME_URL -e ACTIONS_RUNTIME_TOKEN -e ACTIONS_CACHE_URL -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/hello-github-actions/hello-github-actions":"/github/workspace" c27d31:102267eac6f850e5e2ae674a50bf9349
+2020-06-29T16:07:31.6995142Z Hello world my name is Mona
+2020-06-29T16:07:31.7049294Z Cleaning up orphan processes

@@ -1,0 +1,91 @@
+2020-06-29T16:07:23.2703030Z ##[group]Run actions/checkout@v1
+2020-06-29T16:07:23.2703410Z with:
+2020-06-29T16:07:23.2703688Z   clean: true
+2020-06-29T16:07:23.2703856Z ##[endgroup]
+2020-06-29T16:07:24.0597715Z Syncing repository: kristina157/hello-github-actions
+2020-06-29T16:07:24.7168656Z ##[command]git version
+2020-06-29T16:07:24.7196144Z git version 2.27.0
+2020-06-29T16:07:24.7196585Z ##[command]git lfs version
+2020-06-29T16:07:24.7197592Z git-lfs/2.11.0 (GitHub; linux amd64; go 1.13.4)
+2020-06-29T16:07:24.7198618Z ##[command]git init "/home/runner/work/hello-github-actions/hello-github-actions"
+2020-06-29T16:07:24.7200192Z Initialized empty Git repository in /home/runner/work/hello-github-actions/hello-github-actions/.git/
+2020-06-29T16:07:24.7200807Z ##[command]git remote add origin https://github.com/kristina157/hello-github-actions
+2020-06-29T16:07:24.7201068Z ##[command]git config gc.auto 0
+2020-06-29T16:07:24.7202500Z ##[command]git config --get-all http.https://github.com/kristina157/hello-github-actions.extraheader
+2020-06-29T16:07:24.7204881Z ##[command]git -c http.extraheader="AUTHORIZATION: basic ***" fetch --tags --prune --progress --no-recurse-submodules origin +refs/heads/*:refs/remotes/origin/*
+2020-06-29T16:07:24.7205941Z remote: Enumerating objects: 28, done.        
+2020-06-29T16:07:24.7206177Z remote: Counting objects:   3% (1/28)        
+2020-06-29T16:07:24.7206372Z remote: Counting objects:   7% (2/28)        
+2020-06-29T16:07:24.7206560Z remote: Counting objects:  10% (3/28)        
+2020-06-29T16:07:24.7207292Z remote: Counting objects:  14% (4/28)        
+2020-06-29T16:07:24.7207510Z remote: Counting objects:  17% (5/28)        
+2020-06-29T16:07:24.7207701Z remote: Counting objects:  21% (6/28)        
+2020-06-29T16:07:24.7208386Z remote: Counting objects:  25% (7/28)        
+2020-06-29T16:07:24.7208606Z remote: Counting objects:  28% (8/28)        
+2020-06-29T16:07:24.7208795Z remote: Counting objects:  32% (9/28)        
+2020-06-29T16:07:24.7208984Z remote: Counting objects:  35% (10/28)        
+2020-06-29T16:07:24.7209193Z remote: Counting objects:  39% (11/28)        
+2020-06-29T16:07:24.7209383Z remote: Counting objects:  42% (12/28)        
+2020-06-29T16:07:24.7209570Z remote: Counting objects:  46% (13/28)        
+2020-06-29T16:07:24.7209767Z remote: Counting objects:  50% (14/28)        
+2020-06-29T16:07:24.7209940Z remote: Counting objects:  53% (15/28)        
+2020-06-29T16:07:24.7210131Z remote: Counting objects:  57% (16/28)        
+2020-06-29T16:07:24.7210780Z remote: Counting objects:  60% (17/28)        
+2020-06-29T16:07:24.7211028Z remote: Counting objects:  64% (18/28)        
+2020-06-29T16:07:24.7211217Z remote: Counting objects:  67% (19/28)        
+2020-06-29T16:07:24.7211404Z remote: Counting objects:  71% (20/28)        
+2020-06-29T16:07:24.7214299Z remote: Counting objects:  75% (21/28)        
+2020-06-29T16:07:24.7218164Z remote: Counting objects:  78% (22/28)        
+2020-06-29T16:07:24.7218605Z remote: Counting objects:  82% (23/28)        
+2020-06-29T16:07:24.7219443Z remote: Counting objects:  85% (24/28)        
+2020-06-29T16:07:24.7219864Z remote: Counting objects:  89% (25/28)        
+2020-06-29T16:07:24.7220066Z remote: Counting objects:  92% (26/28)        
+2020-06-29T16:07:24.7220258Z remote: Counting objects:  96% (27/28)        
+2020-06-29T16:07:24.7220714Z remote: Counting objects: 100% (28/28)        
+2020-06-29T16:07:24.7221136Z remote: Counting objects: 100% (28/28), done.        
+2020-06-29T16:07:24.7221335Z remote: Compressing objects:   4% (1/22)        
+2020-06-29T16:07:24.7221826Z remote: Compressing objects:   9% (2/22)        
+2020-06-29T16:07:24.7222290Z remote: Compressing objects:  13% (3/22)        
+2020-06-29T16:07:24.7222651Z remote: Compressing objects:  18% (4/22)        
+2020-06-29T16:07:24.7222840Z remote: Compressing objects:  22% (5/22)        
+2020-06-29T16:07:24.7223022Z remote: Compressing objects:  27% (6/22)        
+2020-06-29T16:07:24.7223204Z remote: Compressing objects:  31% (7/22)        
+2020-06-29T16:07:24.7223537Z remote: Compressing objects:  36% (8/22)        
+2020-06-29T16:07:24.7223885Z remote: Compressing objects:  40% (9/22)        
+2020-06-29T16:07:24.7224253Z remote: Compressing objects:  45% (10/22)        
+2020-06-29T16:07:24.7224614Z remote: Compressing objects:  50% (11/22)        
+2020-06-29T16:07:24.7224808Z remote: Compressing objects:  54% (12/22)        
+2020-06-29T16:07:24.7225154Z remote: Compressing objects:  59% (13/22)        
+2020-06-29T16:07:24.7225357Z remote: Compressing objects:  63% (14/22)        
+2020-06-29T16:07:24.7225814Z remote: Compressing objects:  68% (15/22)        
+2020-06-29T16:07:24.7226048Z remote: Compressing objects:  72% (16/22)        
+2020-06-29T16:07:24.7226235Z remote: Compressing objects:  77% (17/22)        
+2020-06-29T16:07:24.7226553Z remote: Compressing objects:  81% (18/22)        
+2020-06-29T16:07:24.7226791Z remote: Compressing objects:  86% (19/22)        
+2020-06-29T16:07:24.7227109Z remote: Compressing objects:  90% (20/22)        
+2020-06-29T16:07:24.7227301Z remote: Compressing objects:  95% (21/22)        
+2020-06-29T16:07:24.7227633Z remote: Compressing objects: 100% (22/22)        
+2020-06-29T16:07:24.7227892Z remote: Compressing objects: 100% (22/22), done.        
+2020-06-29T16:07:24.7228496Z remote: Total 28 (delta 5), reused 5 (delta 0), pack-reused 0        
+2020-06-29T16:07:24.7229084Z From https://github.com/kristina157/hello-github-actions
+2020-06-29T16:07:24.7229490Z  * [new branch]      kristina157-patch-1 -> origin/kristina157-patch-1
+2020-06-29T16:07:24.7229863Z  * [new branch]      master              -> origin/master
+2020-06-29T16:07:24.7230613Z ##[command]git checkout --progress --force b5801a5edb41e17e4cc417278041cd3c6b6b16cc
+2020-06-29T16:07:24.7231413Z Note: switching to 'b5801a5edb41e17e4cc417278041cd3c6b6b16cc'.
+2020-06-29T16:07:24.7231733Z 
+2020-06-29T16:07:24.7232207Z You are in 'detached HEAD' state. You can look around, make experimental
+2020-06-29T16:07:24.7232441Z changes and commit them, and you can discard any commits you make in this
+2020-06-29T16:07:24.7232825Z state without impacting any branches by switching back to a branch.
+2020-06-29T16:07:24.7233115Z 
+2020-06-29T16:07:24.7233466Z If you want to create a new branch to retain commits you create, you may
+2020-06-29T16:07:24.7233949Z do so (now or later) by using -c with the switch command. Example:
+2020-06-29T16:07:24.7234192Z 
+2020-06-29T16:07:24.7234513Z   git switch -c <new-branch-name>
+2020-06-29T16:07:24.7234617Z 
+2020-06-29T16:07:24.7234786Z Or undo this operation with:
+2020-06-29T16:07:24.7235058Z 
+2020-06-29T16:07:24.7235638Z   git switch -
+2020-06-29T16:07:24.7235753Z 
+2020-06-29T16:07:24.7236011Z Turn off this advice by setting config variable advice.detachedHead to false
+2020-06-29T16:07:24.7236388Z 
+2020-06-29T16:07:24.7236572Z HEAD is now at b5801a5 Update main.yml
